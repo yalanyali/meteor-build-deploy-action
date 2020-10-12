@@ -1,4 +1,4 @@
-FROM ubuntu:lts
+FROM ubuntu:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
