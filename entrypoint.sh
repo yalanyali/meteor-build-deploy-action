@@ -24,6 +24,6 @@ meteor npm install --production
 
 # Create pem
 mkdir /home/yigit && mkdir /home/yigit/.ssh
-echo $ID_RSA > /home/yigit/.ssh/id_rsa
+echo ${ID_RSA} > /home/yigit/.ssh/id_rsa
 chmod 600 /home/yigit/.ssh/id_rsa
 cd .deploy && mup stop && mup setup && mup deploy --settings ./settings.json
