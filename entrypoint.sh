@@ -1,7 +1,12 @@
 #!/bin/bash
 
-echo "ID_RSA TEST"
-echo ${ID_RSA} # *****
+echo "SSH_KEY TEST"
+echo ${SSH_KEY} # *****
+
+echo "KNOWN_HOSTS TEST"
+echo ${KNOWN_HOSTS} # ****
+
+exit
 
 # install curl
 apt-get update && apt install curl -y
