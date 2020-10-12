@@ -4,9 +4,9 @@ echo "ID_RSA TEST"
 echo $id_rsa # *****
 if [ -z "$id_rsa" ]
 then
-      echo "\$var is empty"
+      exit
 else
-      echo "\$var is NOT empty"
+      echo "\$id_rsa is NOT empty"
 fi
 
 # install curl
