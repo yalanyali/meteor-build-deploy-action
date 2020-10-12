@@ -4,8 +4,6 @@
 mkdir -p ~/.ssh
 echo ${SSH_KEY} > ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
-cat ~/.ssh/id_rsa
-exit
 
 # install curl
 apt-get update && apt install curl -y
