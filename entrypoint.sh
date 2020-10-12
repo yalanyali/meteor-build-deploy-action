@@ -13,4 +13,4 @@ npm install --global mup
 meteor npm install --production
 
 sed -i "s/__PASSWORD__/${SSH_PASSWORD}/g" .deploy/mup.js
-METEOR_ALLOW_SUPERUSER=true && cd .deploy && mup stop && mup setup && mup deploy --settings ./settings.json
+export METEOR_ALLOW_SUPERUSER=true && cd .deploy && mup stop && mup setup && mup deploy --settings ./settings.json
