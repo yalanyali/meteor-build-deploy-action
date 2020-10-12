@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM node:slim
 
 COPY entrypoint.sh /entrypoint.sh
 
