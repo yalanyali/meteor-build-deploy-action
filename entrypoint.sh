@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# install curl
+apt-get update && apt install -y curl
+
 # install meteor
 curl https://install.meteor.com/ | sh
 
