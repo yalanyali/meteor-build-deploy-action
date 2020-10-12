@@ -1,0 +1,9 @@
+name: 'Meteor Build-Deploy Action'
+description: 'Builds and deploys meteor apps using meteor-up.'
+author: 'Yigitcan Alanyali'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'git-merge'  
+  color: 'purple'
