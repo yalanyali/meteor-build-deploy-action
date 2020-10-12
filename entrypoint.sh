@@ -14,4 +14,4 @@ meteor npm install --production
 
 # Create pem
 sed -i "s/__PASSWORD__/${SSH_PASSWORD}/g" .deploy/mup.js
-cd .deploy && mup stop && mup setup && mup deploy --settings ./settings.json
+cd .deploy && mup stop && mup setup && mup deploy --allow-superuser --settings ./settings.json
