@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Create pem
-mkdir -p ~/.ssh
-echo ${SSH_KEY} > ~/.ssh/id_rsa
-chmod 600 ~/.ssh/id_rsa
-
 # install curl
 apt-get update && apt install curl -y
 
@@ -17,5 +12,6 @@ npm install --global mup
 # create build
 meteor npm install --production
 
-
+# Create pem
+sed -i "s/__PASSWORD__/${SSH_PASSWORD}/g" .deploy/mup.js
 cd .deploy && mup stop && mup setup && mup deploy --settings ./settings.json
