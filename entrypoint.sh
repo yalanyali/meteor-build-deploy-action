@@ -13,6 +13,7 @@ npm install --global mup
 meteor npm install --production
 
 # create pem
+mkdir /home/yigit && mkdir /home/yigit/.ssh
 echo $ID_RSA > /home/yigit/.ssh/id_rsa
 chmod 600 /home/yigit/.ssh/id_rsa
 
