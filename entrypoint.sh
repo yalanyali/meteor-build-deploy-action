@@ -3,6 +3,9 @@
 # install curl
 apt-get update && apt install curl -y
 
+# install nodejs
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+
 # install meteor
 curl https://install.meteor.com/ | sh
 
