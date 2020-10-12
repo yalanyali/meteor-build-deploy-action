@@ -1,13 +1,7 @@
 #!/bin/bash
 
 echo "ID_RSA TEST"
-echo $id_rsa # *****
-if [ -z "$id_rsa" ]
-then
-      exit
-else
-      echo "\$id_rsa is NOT empty"
-fi
+echo ${ID_RSA} # *****
 
 # install curl
 apt-get update && apt install curl -y
