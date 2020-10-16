@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install curl
-apt-get -qq update && apt-get -qq -y install curl bzip2 tar
+apt-get -qq update && apt-get -qq -y install curl bzip2 tar git
 
 # install meteor
 curl https://install.meteor.com/ | sh
